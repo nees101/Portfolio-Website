@@ -1,0 +1,513 @@
+:root{
+    --Font-family-1:'Montserrat', sans-serif;
+    --Font-family-2:'Playfair Display', serif;
+    --Font-family-3:'Roboto Slab', serif;
+    --Font-family-4:'Orbitron', sans-serif;
+    --typingSpeed: 3s;
+}
+
+body{
+    margin: 0;
+    width:100%;
+   font-family:var(--Font-family-1);
+   scroll-behavior: smooth;
+   
+    
+}
+h1{
+    font-family:var(--Font-family-2);
+    }
+h2{
+    font-family:var(--Font-family-3);
+    font-weight:600;
+}
+
+
+
+.App{
+  
+   background-color: #011420; 
+} 
+
+/* Header */
+
+
+Nav{
+    font-family:var(--Font-family-3);
+    font-size:18px;
+}
+.navlink{
+    color:#334756 !important;
+}
+.navlink:hover{
+    color:white!important;
+    /* #3BBA9C; */
+}
+.logo{
+    font-family:var(--Font-family-4);
+    font-size:45px;
+    font-weight:500;
+    color:white;
+}
+
+.togglebtn{
+    border:none !important;
+}
+
+#closeBtn{
+display:none;
+}
+/* Home */
+
+.home a{
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance:none;
+border-radius:0;
+
+}
+
+.home a:hover{
+     color:#F0A500;
+     background-color:black;
+}
+
+
+
+.intro{
+    padding:180px 100px;  
+    height:90vh;
+    color:white;   
+   background:linear-gradient(135deg, #011420 80%,#F0A500 20% ) no-repeat;
+    /* background: url(./pages/assets/bg.png)  no-repeat #011420;
+    background-position:left 100% bottom 100%;
+   background-size:contain;
+   background-blend-mode:overlay ;  */ 
+}
+.intro h1{
+    font-size:70px;
+    color:#F0A500;
+    width:max-content;  
+    position:relative;
+}
+.intro h1::before,
+.intro h1::after{
+content:"";
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+}
+
+.intro h1::before{
+    background:#011420;
+    animation: typing var(--typingSpeed) steps(20) 1s forwards;
+}
+.intro h1::after{
+    width:2px;
+    background:white;
+    animation: 
+    typing var(--typingSpeed) steps(20) 1s forwards,
+    cursor 550ms steps(20) infinite;
+}
+ 
+@keyframes typing{
+    to{
+        left:100%;  /* away to left from starting position*/
+    }
+}
+@keyframes cursor{
+    to{
+        background:transparent;
+    }
+}
+
+.intro p{
+    
+    -moz-opacity:0;
+    -webkit-opacity:0; 
+    -ms-opacity:0;
+    opacity:0;
+
+    animation: fadeIn 3s ease 6s forwards;
+}
+
+.intro a{
+    
+    -moz-opacity:0;
+    -webkit-opacity:0; 
+    -ms-opacity:0;
+    opacity:0;
+
+    
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+   
+
+    animation: 
+    fadeIn 5s ease calc(var(--typingSpeed) + 3s) forwards,
+    slideIn 2s ease calc(var(--typingSpeed) + 3s) forwards ;
+
+    -moz-animation: 
+    fadeIn 5s ease calc(var(--typingSpeed) + 3s) forwards,
+    slideIn 2s ease calc(var(--typingSpeed) + 3s) forwards ;
+
+    -webkit-animation: 
+    fadeIn 5s ease calc(var(--typingSpeed) + 3s) forwards,
+    slideIn 2s ease calc(var(--typingSpeed) + 3s) forwards ;
+}
+
+@keyframes fadeIn {
+  
+   to {
+        -moz-opacity:1;
+        -webkit-opacity:1;
+        -ms-opacity:1;
+        opacity:1; 
+
+    }
+  }
+  
+
+  @keyframes slideIn{
+    to{
+        -moz-transform:translateX(0);
+        -webkit-transform:translateX(0);
+        -ms-transform:translateX(0);
+        transform:translateX(0);
+    }
+}
+
+
+
+
+
+
+/* About */
+#about{
+    color:white;
+    background-color:#122636;
+    margin:6% 3%;
+    
+    
+}
+.aboutrow{
+    padding:0 50px;
+}
+.aboutme{
+    padding:5%;
+}
+.pic-box{
+    width:350px;
+    height:350px;
+    position:relative;
+}
+.frame{
+   width:100%;
+   height:100%;
+    border : 10px solid;
+   border-image:url("./pages/assets/my-pic.jpg") 25 25;
+   filter:grayscale(100%);
+   position:absolute;
+   z-index:1;
+   animation: frame 5s linear infinite;
+}
+@keyframes frame{
+    0%{
+        opacity:0;
+        transform:scale(0.9);
+    }
+    20%{
+        opacity:1;
+        transform:scale(1);
+    }
+    80%{
+        opacity:1;
+        transform:scale(1);
+    }
+    100%{
+        opacity:0;
+        transform:translateY(100px);
+    }
+
+}
+
+.slide{
+    position:absolute;
+    left:100px;
+    bottom:22px;
+    opacity:0;
+    animation:slider 5s infinite;
+}
+
+@keyframes slider{
+    0%{
+        transform:translateX(50px);
+        opacity:0;
+    }
+    30%{
+        transform:translateX(-55px);
+        opacity:1;
+    }
+    50%{
+        transform:translateX(-55px);
+        opacity:1;
+    }
+   100%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+}
+.my-pic{
+    
+    max-width:100%;
+    filter:grayscale(100%);
+    /* margin:3%; */
+    z-index:-1;
+  
+}
+
+
+.skills{
+    color:white;
+    padding:2% 5%;
+}
+
+.box-icon{
+display:inline-block;
+padding:20px;
+color:white;
+}
+
+
+.devicon{
+font-size:60px;
+}
+
+.CTA{
+    
+    background:#F0A500; 
+    margin:6% 3%;
+    padding:4%;
+   
+}
+.CTA p{
+    color:black;
+    font-size:32px;
+}
+
+/* Portfolio */
+
+.projects a:hover{
+color:#F0A500;
+background:black;
+}
+
+.portfolio{
+    color:white;
+    background:#1A374D;
+}
+
+.card-body{
+    margin-top:100px;
+    color:white;
+}
+.overlay{
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  background-color:black;
+  opacity:0.9;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.card:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+ 
+   
+/* Contact */
+
+    .contact{
+
+        min-height:90vh;
+        background-position: cover;
+        color:white;
+        
+    }
+
+    .getintouch{
+        opacity:0;
+        transform:translateY(100%);
+
+        animation: slideUp 3s ease forwards;
+    }
+
+    @keyframes slideUp{
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+       }
+    .wrapper{
+        border-radius:10px;
+        background-color: none;
+        opacity:0;
+        animation:fadeIn 4s ease 2s forwards;
+    }
+    
+    input[type=text],input[type=email],textarea {
+        width: 100%; 
+        padding:8px; 
+        margin-bottom:20px;
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        border:1px solid  white !important;
+        background:black;
+        color:#FFFFFF;
+      }
+      
+      input[type=submit] {
+        cursor: pointer;
+        background-color:#F0A500;
+        color:#FFFFFF;
+        border:none;
+      }
+      input[type=submit]:hover{
+          background:black;
+          color:#F0A500;
+      }
+     
+
+/* Footer */
+.footer{
+    color:white; 
+}
+
+.social-icons a{
+    color:white;  
+}
+.social-icons a:hover{
+   color:#F0A500;
+}
+.attribution{
+    font-size:12px;
+    
+}
+#scroll-up{
+    display:none;
+    font-size:30px;
+    position:fixed;
+    right:10px;
+    bottom:10px; 
+    cursor:pointer;
+    color:white;
+}
+#scroll-up:hover{
+    color:#F0A500;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 480px) {
+    .navbg{
+        background:#1A374D;;
+    }
+    .navlink{
+    color:white !important;
+    }
+    .intro{
+        padding:150px 50px;  
+        text-align:center;  
+    }
+    .intro h1{
+        font-size:32px;
+    }
+    #about{
+        margin:0;
+        border-radius:0;
+        border:none;
+    }
+    .aboutrow{
+        padding:0 ;
+    }
+    .aboutme{
+        text-align:center;
+    }
+    .pic-box{
+        left:0;
+    }
+     .frame{
+        animation:none;
+    }
+    .slide{
+        animation:none;
+        opacity:1;
+        left:0px;
+        bottom:0px;
+    }
+    
+    .my-pic{
+        height:300px;
+        width:300px;
+        margin:25px;
+
+    }
+    .skills{
+        margin:15% 0;
+    }
+
+    .devicon{
+    font-size:45px;
+    }
+    .CTA{
+        margin:0;
+        border-radius:0;
+    }
+    .CTA p{
+        font-size:18px;
+    }
+    .footer{
+        background:black;
+    }
+   
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+    .intro h1{
+        font-size:48px;
+    }
+    .intro{
+        padding:150px 50px;  
+        text-align:center;   
+    }
+    .CTA p{
+        font-size:24px;
+    }
+   
+    .frame{
+        animation:none;
+    }
+    .slide{
+        animation:none;
+        opacity:1;
+        left:0px;
+        bottom:0px;
+    }
+    .my-pic{
+        height:300px;
+        width:300px;
+        margin:25px;
+
+    }
+}

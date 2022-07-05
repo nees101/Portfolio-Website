@@ -1,0 +1,76 @@
+{"projects":[
+    {
+     "id":"1",
+     "image":"./images/projects/portfolio/thumbnail.png",
+     "title": "Portfolio Website",
+     "description":"",
+     "skills":"HTML/CSS/JS/Bootstrap/React",
+     "website":"https://nees101.github.io/Portfolio-website/",
+     "code":"https://github.com/nees101/Portfolio-website"
+    },
+    {
+        "id":"2",
+     "image":"./images/projects/room/thumbnail.png",
+     "title": "Room Landing Page",
+     "description":"",
+     "skills":"HTML/CSS/JS/Jquery/Bootstrap",
+     "website":"https://nees101.github.io/Room-homepage-master-challenge-solution/",
+     "code":"https://github.com/nees101/Room-homepage-master-challenge-solution"
+    },
+    {
+        "id":"3",
+     "image":"./images/projects/ecommerce_page/thumbnail.png",
+     "title": "Ecommerce Product Page",
+     "description":"",
+     "skills":"HTML/CSS/JS/Jquery/Bootstrap",
+     "website":"https://nees101.github.io/Ecommerce-Product-Page/",
+     "code":"https://github.com/nees101/Ecommerce-Product-Page"
+    },
+    {
+        "id":"4",
+        "image":"./images/projects/blogr/thumbnail.png",
+        "title": "Blogr Landing Page",
+        "description":"",
+        "skills":"HTML/CSS/JS/Jquery/Bootstrap",
+        "website":"https://nees101.github.io/blogr-landing-page-main/",
+        "code":"https://github.com/nees101/blogr-landing-page-main"
+       },
+       {
+        "id":"5",
+        "image":"./images/projects/timer/thumbnail.png",
+        "title": "Launch Countdown Timer",
+        "description":"",
+        "skills":"HTML/CSS/JS",
+        "website":"https://nees101.github.io/Launch-countdown-timer-main-challenge-solution/",
+        "code":"https://github.com/nees101/Launch-countdown-timer-main-challenge-solution"
+       },
+       {
+        "id":"6",
+        "image":"./images/projects/pricing_component/thumbnail.png",
+        "title": "Interactive Pricing Component",
+        "description":"",
+        "skills":"HTML/CSS/JS/Bootstrap/jQuery",
+        "website":"https://nees101.github.io/Interactive-Pricing-Component/",
+        "code":"https://github.com/nees101/Interactive-Pricing-Component"
+       },
+       {
+        "id":"7",
+        "image":"./images/projects/advice_generator/thumbnail.png",
+        "title": "Random Advice Generator",
+        "description":"",
+        "skills":"HTML/CSS/JS/Bootstrap/jQuery/API",
+        "website":"https://nees101.github.io/Random-Advice-Generator-App/",
+        "code":"https://github.com/nees101/Random-Advice-Generator-App"
+       },
+       {
+        "id":"8",
+        "image":"../images/projects/fylo/thumbnail.png",
+        "title": "Fylo Landing Page",
+        "description":"",
+        "skills":"HTML/CSS/JS/Bootstrap",
+        "website":"https://nees101.github.io/Fylo-Landing-Page-with-two-column-layout/",
+        "code":"https://github.com/nees101/Fylo-Landing-Page-with-two-column-layout"
+       }
+]
+
+}
