@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from 'emailjs-com';
+import resume from "./assets/Resume.pdf";
 
 
 
@@ -31,7 +32,7 @@ window.onload = function() {
                <p style={{color:"#F0A500", letterSpacing:1 , fontSize:18}}> Or, want to hire me? </p>
                
                <p className=" py-3 " style={{lineHeight:2}}>I’m currently looking for a new role and am open to a wide range of opportunities. Please do feel free to check out my online profiles below and get in touch using the form or e-mail me directly @ <a href="mailto:nees101@gmail.com" style={{color:"#F0A500"}}>nees101@gmail.com</a> </p>
-               
+               <p>View / Download my <a className="resume" href={resume} >Resume</a>.</p> 
               
             </div>
             <div className="col-12 col-lg-6">
