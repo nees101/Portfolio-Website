@@ -387,7 +387,10 @@ background:black;
           color:#F0A500;
       }
      
-
+     .resume{
+             color:#F0A500;
+             text-decoration:none;
+        }
 /* Footer */
 .footer{
     color:white; 
