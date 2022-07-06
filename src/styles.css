@@ -391,6 +391,11 @@ background:black;
              color:#F0A500;
              text-decoration:none;
         }
+    .resume:hover{
+        color:#F0A500;
+        cursor:pointer;
+     }
+
 /* Footer */
 .footer{
     color:white; 
