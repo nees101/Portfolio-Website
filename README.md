@@ -26,11 +26,11 @@ Users should be able to:
 
 #### Desktop Design
 
-![](./public/images/FinalDesignScreenshots/Desktop-design.png)
+![](./public/images/projects/FinalDesignScreenshots/Desktop-design.png)
 
 #### Mobile Design
 
-![](./public/images/FinalDesignScreenshots/Mobile-design.png)
+![](./public/images/projects/FinalDesignScreenshots/Mobile-design.png)
 
 
 
