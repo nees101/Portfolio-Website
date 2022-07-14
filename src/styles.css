@@ -1,3 +1,5 @@
+/* Custom styles */
+
 :root{
     --Font-family-1:'Montserrat', sans-serif;
     --Font-family-2:'Playfair Display', serif;
@@ -6,13 +8,13 @@
     --typingSpeed: 3s;
 }
 
+/* Global Styles */
+
 body{
     margin: 0;
     width:100%;
    font-family:var(--Font-family-1);
-   scroll-behavior: smooth;
-   
-    
+   scroll-behavior: smooth;    
 }
 h1{
     font-family:var(--Font-family-2);
@@ -22,7 +24,12 @@ h2{
     font-weight:600;
 }
 
+Nav{
+    font-family:var(--Font-family-3);
+    font-size:18px;
+}
 
+/* Reusable styles */
 
 .App{
   
@@ -32,10 +39,6 @@ h2{
 /* Header */
 
 
-Nav{
-    font-family:var(--Font-family-3);
-    font-size:18px;
-}
 .navlink{
     color:#334756 !important;
 }
@@ -456,7 +459,7 @@ background:black;
         left:0;
     }
      .frame{
-        animation:none;
+         display:none;
     }
     .slide{
         animation:none;
@@ -491,9 +494,10 @@ background:black;
    
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 900px) {
     .intro h1{
         font-size:48px;
+        text-align:center;
     }
     .intro{
         padding:150px 50px;  
