@@ -54,7 +54,7 @@ function Home(){
                        </div>
                        <div className="box-icon col-lg-2 col-3">
                        <i className="fa-solid fa-mobile-screen fa-3x"></i>
-                          <p>Responsive Web Design</p>
+                          <p style={{fontSize:14}}>Responsive Web Design</p>
                        </div>
                        <div className="box-icon col-lg-2 col-3">
                          <i className="devicon devicon-jquery-plain-wordmark"></i>
@@ -68,7 +68,7 @@ function Home(){
                         </div>
                        <div className="box-icon col-lg-2 col-3">
                          <i className="fas fa-3x fa-cogs" aria-hidden="true"></i>
-                          <p>API</p>
+                          <p style={{fontSize:14}}>API</p>
                        </div>
                         <div className="box-icon col-lg-2 col-3">
                           <i className="devicon devicon-git-plain-wordmark"></i>
@@ -80,18 +80,18 @@ function Home(){
                         </div>
                         <div className="box-icon col-lg-2 col-3">
                           <i className="fa-solid fa-terminal fa-2x"></i>
-                         <p>Terminal</p>
+                         <p style={{fontSize:14}}>Terminal</p>
                        </div>
                        <div className="box-icon col-lg-2 col-3">
                          <i className="devicon devicon-vscode-plain-wordmark"></i>
                         </div>
                   
                         <div className="box-icon col-lg-2 col-3">
-                           <i className=" devicon devicon-atom-original-wordmark " style={{fontSize:100}}></i>
+                           <i className=" devicon devicon-atom-original-wordmark " style={{fontSize:80}}></i>
                         </div>
                         <div className="box-icon col-lg-2 col-3">
                         <i className="devicon-chrome-plain"style={{fontSize:50}}></i>
-                          <p>Chrome Dev Tools</p>
+                          <p style={{fontSize:14}}>Chrome Dev Tools</p>
                        </div>
                       </div>
                    </div>
