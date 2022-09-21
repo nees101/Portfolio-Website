@@ -8,7 +8,7 @@ function Home(){
       
           <div className="intro text-left ">
              <h1 >Hi! I'm Neethu Nair.</h1>
-             <p className="mt-2">I'm a Front-End Web Developer based in Austin, TX </p>
+             <p className="mt-2">I'm a Front-End Web Developer based in London,UK </p>
              
              <a href="#about" type="button" className="btn btn-outline-light mt-2">ABOUT ME <i className="fa-solid fa-angles-down"></i></a>   
            
@@ -32,7 +32,7 @@ function Home(){
                      My coding journey began last year October 2021 and since then I have been coding almost everyday. As part of my learning I have completed courses on Udemy , freeCodecamp etc. and undertaken couple of challenges and projects that has helped me in improving my skills tremendously.
                      </p> 
                      <p> Apart from coding I love Math and have been educating kids of all ages over the past couple of years. I love nature and enjoy travelling whenever possible.</p>
-                      <p> I’m originally from India but currently based in Austin, TX. Also, I’m open to working remotely as well. I’d love you to check out my work.</p>
+                      <p> I’m originally from India but currently based in London, UK. Also, I’m open to working remotely as well. I’d love you to check out my work.</p>
                       <br/>
                       <a href="/portfolio" type="button" className="btn btn-outline-light  ">GO TO PORTFOLIO  <i className="fa-solid fa-angles-right"></i></a>
                   </div>
